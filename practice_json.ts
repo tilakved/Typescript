@@ -48,3 +48,11 @@ data.map(section => {
     });
 });
 console.log(newArr);
+
+
+const x4=[];
+for(let c of x){
+    x4.push(x.filter((y:any)=>{
+        return y.seats
+    }))
+}
