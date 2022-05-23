@@ -57,6 +57,8 @@ for (let a of x) {
 x4 = x4.flat();
 // console.log(x4);
 
-const a = Object.entries(data)
+const a = Object.entries(data.map(b =>{
+    return b.is_automatic
+}))
 
 console.log(a);
