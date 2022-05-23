@@ -1,5 +1,5 @@
 import data from "./sample.json";
-let x: any, x2: any, x3: any, y: any;
+let x: any, x2: any, x3: any, x4: any, y: any;
 
 
 // create an array with all tables.
@@ -47,12 +47,16 @@ data.map(section => {
         }
     });
 });
-console.log(newArr);
 
-
-const x4=[];
-for(let c of x){
-    x4.push(x.filter((y:any)=>{
-        return y.seats
+x4 = [];
+for (let a of x) {
+    x4.push(x.filter((y: any) => {
+        return y.no_of_seats
     }))
 }
+x4 = x4.flat();
+// console.log(x4);
+
+const a = Object.entries(data)
+
+console.log(a);
